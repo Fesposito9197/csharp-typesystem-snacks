@@ -1,7 +1,7 @@
 ﻿
 //snack1();
-snack2();
-
+//snack2();
+snack3();
 
 
 void snack1()
@@ -42,4 +42,16 @@ void snack2()
         Console.WriteLine(secondWord);
         Console.WriteLine(firstWord);
     }
+}
+
+void snack3()
+{
+    int somma = 0;
+    Console.WriteLine("Inserisci per 10 volte un numero: ");
+    for (int i = 0; i < 10; i++) 
+    {
+        int numeroUtente = Convert.ToInt32(Console.ReadLine());
+        somma += numeroUtente;
+    }
+    Console.WriteLine("la somma dei numeri inseriti e {0}", somma);
 }
