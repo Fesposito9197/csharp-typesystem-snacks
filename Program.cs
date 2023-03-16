@@ -4,7 +4,8 @@
 //snack3();
 //snack4();
 //snack5();
-snack6();
+//snack6();
+snack7();
 
 
 void snack1()
@@ -103,5 +104,32 @@ void snack6()
     else
     {
         Console.WriteLine("Non puoi entrare alla festa");
+    }
+}
+
+void snack7()
+{
+    var numeriInseriti = new int[6];
+    Console.WriteLine("Inserisci per 6 volte un numero: ");
+    for (int i = 0; i < 6; i++)
+    {
+        var numeroUtente = Convert.ToInt32(Console.ReadLine());
+        if (numeroUtente % 2 != 0)
+        {
+            numeriInseriti[i] = numeroUtente;
+            
+        }
+        else
+        {
+            Console.WriteLine("Inserisci un numero dispari");
+        }
+
+    }
+    Console.WriteLine("Numeri dispari inseriti nell'array");
+
+    for (int i = 0;i < numeriInseriti.Length; i++)
+    {
+        Console.WriteLine(numeriInseriti[i]);
+
     }
 }
