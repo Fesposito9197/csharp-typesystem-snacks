@@ -5,7 +5,8 @@
 //snack4();
 //snack5();
 //snack6();
-snack7();
+//snack7();
+snack8();
 
 
 void snack1()
@@ -132,4 +133,17 @@ void snack7()
         Console.WriteLine(numeriInseriti[i]);
 
     }
+}
+
+void snack8()
+{
+    int[] numbers = { 2, 4, 5, 7, 1, 8, 9, 10, 6, 3 };
+    int somma = 0;
+    Console.WriteLine("Gli elementi in posizione dispari sono");
+    for (int i = 1;  i < numbers.Length; i+=2) 
+    {
+        Console.WriteLine($"{ numbers[i]}, ");
+        somma += numbers[i];
+    }
+    Console.WriteLine("La loro somma e {0}", somma);
 }
