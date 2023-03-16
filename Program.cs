@@ -1,7 +1,8 @@
 ﻿
 //snack1();
 //snack2();
-snack3();
+//snack3();
+snack4();
 
 
 void snack1()
@@ -54,4 +55,19 @@ void snack3()
         somma += numeroUtente;
     }
     Console.WriteLine("la somma dei numeri inseriti e {0}", somma);
+}
+
+void snack4()
+{
+    int somma = 0;
+    var numbers = new int[10];
+
+    for (int i = 2;i <= 10;i++) 
+    {
+         somma += i;
+    }
+
+    var media = somma / 9;
+    Console.WriteLine("La somma dei numeri da 2 a 10 e {0}", somma);
+    Console.WriteLine("La media dei numeri da 2 a 10 e {0}", media);
 }
