@@ -3,7 +3,8 @@
 //snack2();
 //snack3();
 //snack4();
-snack5();
+//snack5();
+snack6();
 
 
 void snack1()
@@ -87,4 +88,20 @@ void snack5()
         Console.WriteLine(numeroUtente + 1);
     }
 
+}
+
+void snack6()
+{
+    var invitati = new string[] { "Paolo", "Luca", "Giovanni", "Marco" };
+
+    Console.WriteLine("Inserisci il tuo nome");
+    var nomeUtente = Console.ReadLine();
+    if (invitati.Contains(nomeUtente, StringComparer.OrdinalIgnoreCase))
+    {
+        Console.WriteLine("Puoi entrare alla festa");
+    }
+    else
+    {
+        Console.WriteLine("Non puoi entrare alla festa");
+    }
 }
