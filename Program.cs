@@ -7,8 +7,8 @@
 //snack6();
 //snack7();
 //snack8();
-snack9();
-
+//snack9();
+snack10();
 
 void snack1()
 {
@@ -165,6 +165,7 @@ void snack9()
         if(userNumber <= 0)
         {
             Console.WriteLine("Non puoi inserire numeri negativi e lo 0");
+            continue;
         }
         somma += userNumber;
     }
@@ -174,5 +175,28 @@ void snack9()
     {
         Console.WriteLine("I numeri inseriti sono:");
         Console.WriteLine(numbers[i]);
+    }
+}
+
+void snack10()
+{
+    int N = Convert.ToInt32(Console.ReadLine());
+    var random = new Random();
+
+    for (int i = 0; i < N; i++)
+    {
+        var ints = new int[10];
+
+        for (int j = 0; j < 10; j++)
+        {
+            ints[j] = random.Next(1, 100);
+        }
+
+        foreach (var num in ints)
+        {
+            Console.Write($"{num}; ");
+        }
+
+        Console.WriteLine();
     }
 }
