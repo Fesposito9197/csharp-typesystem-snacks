@@ -2,7 +2,8 @@
 //snack1();
 //snack2();
 //snack3();
-snack4();
+//snack4();
+snack5();
 
 
 void snack1()
@@ -70,4 +71,20 @@ void snack4()
     var media = somma / 9;
     Console.WriteLine("La somma dei numeri da 2 a 10 e {0}", somma);
     Console.WriteLine("La media dei numeri da 2 a 10 e {0}", media);
+}
+
+void snack5()
+{
+    Console.WriteLine("Inserisci un numero: ");
+    int numeroUtente = Convert.ToInt32(Console.ReadLine());
+
+    if (numeroUtente % 2 == 0)
+    {
+        Console.WriteLine("Hai inserito un numero pari {0}", numeroUtente);
+    }
+    else
+    {
+        Console.WriteLine(numeroUtente + 1);
+    }
+
 }
