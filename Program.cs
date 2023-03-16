@@ -6,7 +6,8 @@
 //snack5();
 //snack6();
 //snack7();
-snack8();
+//snack8();
+snack9();
 
 
 void snack1()
@@ -146,4 +147,32 @@ void snack8()
         somma += numbers[i];
     }
     Console.WriteLine("La loro somma e {0}", somma);
+}
+
+void snack9()
+{
+    
+
+    //creo un array vuoto
+    var numbers = new int[0];
+
+    int somma = 0;
+    while (somma < 50)
+    {
+        //chiedo di inserire i numeri a l'utente
+        Console.WriteLine("Inserisci dei numeri");
+        int userNumber = Convert.ToInt32(Console.ReadLine());
+        if(userNumber <= 0)
+        {
+            Console.WriteLine("Non puoi inserire numeri negativi e lo 0");
+        }
+        somma += userNumber;
+    }
+    Console.WriteLine("La somma degli elementi e < 50");
+    
+    for(int i = 1;i < numbers.Length; i++)
+    {
+        Console.WriteLine("I numeri inseriti sono:");
+        Console.WriteLine(numbers[i]);
+    }
 }
