@@ -9,7 +9,8 @@
 //snack8();
 //snack9();
 //snack10();
-snack11();
+//snack11();
+//snack12();
 
 void snack1()
 {
@@ -66,7 +67,7 @@ void snack3()
 void snack4()
 {
     int somma = 0;
-    var numbers = new int[10];
+    
 
     for (int i = 2;i <= 10;i++) 
     {
@@ -225,5 +226,20 @@ void snack11()
     {
         Console.WriteLine("La parola più lunga è:");
         Console.WriteLine(word2);
+    }
+}
+
+void snack12()
+{
+    Console.WriteLine("Inserisci un numero:");
+    int userNumber = Convert.ToInt32(Console.ReadLine());   
+
+    if (userNumber % 2 == 0)
+    {
+        Console.WriteLine("il numero inserito e pari");
+    }
+    else
+    {
+        Console.WriteLine("il numero inserito e dispari");
     }
 }
